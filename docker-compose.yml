@@ -1,0 +1,14 @@
+version: "3.2"
+
+services:
+  load-tester:
+    container_name: k6-load-tester
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./src:/tests"
+    command: "k6 run ./invoice-smoke.test.js"
+    # command: "k6 run -u 2 -d 5s ./invoice-smoke-test.js"
+    env_file:
+      - ./.env.local

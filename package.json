@@ -1,0 +1,25 @@
+{
+  "name": "k6-load-tester",
+  "version": "1.0.0",
+  "description": "A project to perform smoke, load and strees testing to backend service or api.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "bundle": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@types/k6": "^0.29.0",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.8.2",
+    "k6": "^0.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}

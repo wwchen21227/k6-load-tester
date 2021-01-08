@@ -1,0 +1,1 @@
+docker run -it -v "${PWD}/postman/:/postman/" loadimpact/postman-to-k6 /postman/collection.json -o /postman/k6/k6-script.js
